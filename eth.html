@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TrustWallet</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="w3hubs.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+            <style>
+                 body{
+    font-family: "Nunito Sans";
+    background-color: whitesmoke;
+    }
+    .trust{
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      display: block;
+    }
+    .login-form{
+    padding: 25px;
+    }
+    h3{
+    padding-left:30px;
+    padding-right: 20px;
+    font-weight: 700;
+    }
+    label{
+    padding-top: 4px;
+    padding-left: 4px;
+    }
+    .bg-color{
+    background-color:rgb(245, 248, 250);
+    }
+    .bg-color:hover label{
+    color:#31a1f2; 
+    }
+    .btn-custom{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    font-weight:700;
+    height: 48px;
+    }
+    .btn-custom{
+    color: #fff !important;
+    background-color: rgb(29, 161, 242);
+    }
+    .form-control{
+    border:0px;
+    background-color: rgb(245, 248, 250);
+    border-bottom: 2px solid #657786;
+    padding: 0px 4px 0px 4px;
+    min-height: 20px;
+    }
+    .form-control:focus{
+    box-shadow: none;
+    background-color: rgb(245, 248, 250);
+    border-color: #31a1f2;
+    }
+    .fa{
+    color: rgb(29, 161, 242);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    }
+    a{
+    text-decoration: none;
+    color: rgb(27, 149, 224);
+    }
+    a:hover{
+    text-decoration: underline;
+    color: rgb(27, 149, 224);
+    }
+    .snake{
+     text-align:center;
+     margin-top: 40%; 
+
+    }
+     .visa{
+     text-align:center;}
+     .master{
+     text-align:center;margin-top:10px;}
+     #text{
+  font-weight:bold;
+  color: green;
+  text-shadow: 2px 2px 5px;
+  }
+  .container {
+          padding: 50px;
+          padding-top: 0px;
+        }
+        nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav y {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+y:nth-child(1) {
+	width: 100px;
+}
+y:nth-child(2) {
+	width: 190px;
+}
+y:nth-child(3) {
+	width: 60px;
+}
+.ppp{
+    margin-bottom: 300px;
+}
+.create{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-style: solid;
+    padding: 0px;
+    background-color: white;
+    border-radius: 12px;
+    width: 95%;
+    
+}
+.inp {
+	
+    padding-left: 20px;
+}
+input {
+    outline: white;
+    text-align: left;
+    border: 4px solid white;
+}
+.mainin {
+    text-align: left;
+}
+
+/**/
+
+nav r {
+	line-height: 50px;
+	height: 100%;
+    width: 80%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+r:nth-child(1) {
+	width: 100px;
+}
+r:nth-child(2) {
+	width: 110px;
+}
+r:nth-child(3) {
+	width: 100px;
+}
+r:nth-child(4) {
+	width: 160px;
+}
+r:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, r:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, r:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-blog, r:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-portefolio, r:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, r:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+
+
+
+/*
+
+nav k {
+	line-height: 40px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+k:nth-child(1) {
+  width: 10%; 
+  left: -50px;
+k:nth-child(2) {
+ width 150px
+}
+k:nth-child(3) {
+	
+}
+k:nth-child(4) {
+	
+}
+
+nav .start-home, k:nth-child(1):hover~.animation {
+	width: 80px;
+	left: -50px;
+	background-color: whitesmoke;
+}
+nav .start-about, k:nth-child(2):hover~.animation {
+	width: 95px;
+	left: 50px;
+	background-color: whitesmoke;
+}
+nav .start-blog, k:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 170px;
+	background-color: whitesmoke;
+}
+nav .start-portefolio, k:nth-child(4):hover~.animation {
+	width: 100px;
+	left: 300px;
+	background-color: whitesmoke;
+}
+.navb{
+  background-color: white;
+}
+
+
+
+#drop {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: n;
+} */
+
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <diV class="nav">
+                <nav>
+                   <div class="ppp">
+                    <y onclick="history.back()" style="color: #0A64BC"><b>Back </b> </y>
+                    <y style="color: black; text-align: center;"><b>Import Ethereum</b></y>
+                   <a href="qr.html" target="_self"><y style="color: #0A64BC; text-align: end; "><b>QR Scan</b></y></a>
+                    
+                   </div>
+        
+                </nav>
+             </diV>
+            <div class="row">
+                
+        
+              <div class="col-md-3"></div>
+             <center>
+              <div class="create">
+                  <div class="inp">
+                    <p style="font-size: 12px; text-align: left;  padding-left: 2px; color: #0A64BC;">.  Name</p>
+                    <div class="mainin">
+                    <input type="text" name="userName" value="Ethereum Wallet 1" STYLE='color: #0A64BC;'>
+                    </div>
+                  </div>
+              </div>
+              </center>
+              <div class="col-md-6 p-0 pt-3">
+                <center>
+                 <div> <!---
+                    <nav>
+                        <div class="container">
+                          <nav class="navb" >
+                          
+                            <k href="#" onclick="brop()">Phrase</k>
+                            <k href="#" onclick="brop1()">Keystone</k>
+                            <k href="#" onclick="brop2()">Private Kay</k>
+                            <k href="#" onclick="brop3()">Address</k>
+                          
+                            <div class="animation start-home"></div>
+                          </nav>
+                        </div>
+                    </nav> -->
+                 </div>
+                </center>
+                <!---
+                <script>
+                  
+                  function brop() {
+                    var x = document.getElementById("drop");
+                    if (x.style.display === "none") {
+                      x.style.display = "block";
+                    } else {
+                      x.style.display = "none";
+                    }
+                  }
+                  
+                  function brop1() {
+                    var x = document.getElementById("drop");
+                    if (x.style.display === "none") {
+                      x.style.display = "block";
+                    } else {
+                      x.style.display = "none";
+                    }
+                  }
+                  
+                  function brop2() {
+                    var x = document.getElementById("drop");
+                    if (x.style.display === "none") {
+                      x.style.display = "block";
+                    } else {
+                      x.style.display = "none";
+                    }
+                  }
+                   
+                  function brop3() {
+                    var x = document.getElementById("drop");
+                    if (x.style.display === "none") {
+                      x.style.display = "block";
+                    } else {
+                      x.style.display = "none";
+                    }
+                  }
+                  </script>
+                
+                  <center>
+                    <div id="drop">
+                      <p></p>
+                      </div>
+                  </center>
+                -->
+                
+              </body>
+    </body>
+</html>

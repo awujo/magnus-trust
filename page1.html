@@ -1,0 +1,510 @@
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 
+  CSS3,Bootstrap,Tailwind CSS,Shoelace Style which are 100% Mobile friendly. w3Hubs all Layouts are responsive 
+  cross browser supported, best quality world class designs. -->
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <title>TrustWallet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="w3hubs.com">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+  <style type="text/css">
+    body{
+    font-family: "Nunito Sans";
+    background-color:white;
+    }
+    .trust{
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      display: block;
+    }
+    .login-form{
+    padding: 25px;
+    }
+    h3{
+    padding-left:30px;
+    padding-right: 20px;
+    font-weight: 700;
+    }
+    label{
+    padding-top: 4px;
+    padding-left: 4px;
+    }
+    .bg-color{
+    background-color:rgb(245, 248, 250);
+    }
+    .bg-color:hover label{
+    color:#31a1f2;
+    }
+    .btn-custom{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    font-weight:700;
+    height: 48px;
+    }
+    .btn-custom{
+    color: #fff !important;
+    background-color: rgb(29, 161, 242);
+    }
+    .form-control{
+    border:0px;
+    background-color: rgb(245, 248, 250);
+    border-bottom: 2px solid #657786;
+    padding: 0px 4px 0px 4px;
+    min-height: 20px;
+    }
+    .form-control:focus{
+    box-shadow: none;
+    background-color: rgb(245, 248, 250);
+    border-color: #31a1f2;
+    }
+    .fa{
+    color: rgb(29, 161, 242);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    }
+    a{
+    text-decoration: none;
+    color: rgb(27, 149, 224);
+    }
+    a:hover{
+    text-decoration: underline;
+    color: rgb(27, 149, 224);
+    }
+    .snake{
+     text-align:center;
+     margin-top: 40%; 
+
+    }
+     .visa{
+     text-align:center;}
+     .master{
+     text-align:center;margin-top:10px;}
+     #text{
+  font-weight:bold;
+  color: green;
+  text-shadow: 2px 2px 5px;
+  }
+  .container {
+          padding: 50px;
+        }
+        button,
+        button::after {
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;                                                  
+        }
+        button {
+          background: none;
+          border: 4px solid #fff;
+          border-radius: 10px;
+          color: #fff;
+          display: block;
+          font-size: 1.6em;
+          font-weight: bold;
+          margin: 10px auto;
+          padding: 2em 6em;
+          position: relative;
+          text-transform: uppercase;
+        }
+        button::before,
+        button::after {
+          background: #fff;
+          content: '';
+          position: absolute;
+          z-index: -1;
+        }
+        button:hover {
+          color: #29f2e4;
+        }
+        .button1::after {
+          height: 0;
+          left: 0;
+          top: 0;
+          width: 100%;
+        }
+        .button1:hover:after {
+          height: 100%;
+        }
+        .button2::after {
+          height: 100%;
+          left: 0;
+          top: 0;
+          width: 0;
+        }
+        .button2:hover:after {
+          width: 100%;
+        }
+        .button3::after {
+          height: 0;
+          left: 50%;
+          top: 50%;
+          width: 0;
+        }
+        .button3:hover:after {
+          height: 100%;
+          left: 0;
+          top: 0;
+          width: 100%;
+        }
+
+
+        img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.wrapper {
+  max-width: 970px;
+  margin: 0 auto 2rem;
+}
+
+.trigger {
+  display: none;
+}
+
+.slider, .slider-wrapper {
+  position: relative;
+  height: 250px;
+}
+
+.slide {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img {
+  filter: brightness(100%);
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-figure {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.slide-caption {
+  color: black;
+}
+.slide-caption:not(.slide-caption--left):not(.slide-caption--right) {
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.slide-caption--taped p {
+  display: inline;
+  padding: .25rem .5rem;
+  line-height: 1.75;
+  background-color: blue;
+}
+
+.slide-caption--left {
+  left: 1rem;
+}
+
+.slide-caption--right {
+  right: 1rem;
+  text-align: right;
+}
+
+.trigger:checked + .slide {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav {
+  position: absolute;
+  z-index: 7000;
+  width: 83%;
+  margin-top: 10%;
+  text-align: center;
+  bottom: 1rem;
+  
+}
+
+.slider-nav--left {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.slider-nav--right {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.slider-nav--offcanvas {
+  position: static;
+  margin: 1rem 0;
+}
+
+.slider-nav__item {
+  display: inline-block;
+}
+
+.slider-nav__label {
+  font-size: 13px;
+  background-color: #0A64BC;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+.slider-nav__label:hover, .slider-nav__label:active, .slider-nav__label:focus {
+  background-color: gray;
+  color: black;
+}
+
+.slider-nav__label--invert {
+  background-color: white;
+  color: rgba(0, 26, 255, 0.87);
+}
+.slider-nav__label--invert:hover, .slider-nav__label--invert:active, .slider-nav__label--invert:focus {
+  background-color: black;
+  color: white;
+}
+
+.slider-nav__label--dot {
+  height: .75rem;
+  width: .75rem;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider, .slider-wrapper {
+    height: 480px;
+  }
+
+  .slide-caption {
+    width: 65%;
+    font-size: 1.5rem;
+  }
+  .slide-caption p {
+    padding: .5rem .75rem;
+    line-height: 2.25;
+  }
+
+  .slide-caption--left {
+    left: 2rem;
+  }
+
+  .slider-nav--left {
+    padding-left: 2rem;
+  }
+
+  .slide-caption--right {
+    right: 2rem;
+  }
+
+  .slider-nav--right {
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider, .slider-wrapper {
+    height: 360px;
+  }
+
+  .slide-caption {
+    width: 75%;
+    font-size: 1.25rem;
+  }
+
+  .slide-caption p {
+    line-height: 2;
+    padding: .35rem .65rem;
+  }
+
+  .slide-caption--left {
+    left: 1.5rem;
+  }
+
+  .slider-nav--left {
+    padding-left: 1.5rem;
+  }
+
+  .slide-caption--right {
+    right: 1.5rem;
+  }
+
+  .slider-nav--right {
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .slide-img {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Page Styles */
+
+body {
+  background-color: white;
+  color: white;
+}
+
+.single-paged-2 {
+  background-color: #bdc3c7;
+  color: rgba(0, 0, 0, .65);
+}
+
+.single-paged-3 {
+  background-color: #f2c9c5;
+  color: #333;
+}
+
+.lab-pages {
+  margin-bottom: 1.5em;
+}
+
+.lab-page-current,
+.lab-page-link {
+  display: block;
+  padding: .25em .5em;
+  font-size: 14px;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, .25);
+  color: rgba(0, 0, 0, .25);
+}
+
+.lab-page-current {
+  color: rgba(255, 255, 255, .75);
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, .25);
+  border-color: transparent;
+}
+
+@media only screen and (min-width: 500px) {
+  .lab-page-current,
+  .lab-page-link {
+    display: inline-block;
+  }
+  .slider, .slider-wrapper {
+    height: 320px;
+    text-align: center;
+  }
+  .slide-img{
+    width: 60%;
+    height: auto;
+  }
+}
+.create{
+    margin-top: 100px;
+    border: 4px solid #0A64BC;
+    border-style: solid;
+    padding: -5px;
+    background-color: #0A64BC;
+    border-radius: 12px;
+    
+}
+.have{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+  </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 p-0 pt-3">
+      <script>
+       
+      </script>
+      
+      <div style="margin-top: 70px;">
+        <div class="slider-wrapper">
+            <div class="slider slider-2">
+              <input type="radio" name="slider-1" class="trigger" id="four" checked="checked" />
+              <div class="slide">
+                <figure class="slide-figure">
+                  <img class="slide-img"   src="IMG_4490.PNG" />
+                  <figcaption class="slide-caption"></figcaption>
+                </figure>
+              </div>
+              <input type="radio" name="slider-1" class="trigger" id="five" />
+              <div class="slide">
+                <figure class="slide-figure">
+                  <img class="slide-img" src="IMG_4491.PNG" />
+                  <figcaption class="slide-caption"></figcaption>
+                </figure>
+              </div>
+              <input type="radio" name="slider-1" class="trigger" id="six" />
+              <div class="slide">
+                <figure class="slide-figure">
+                  <img class="slide-img" width="" src="IMG_4492.PNG" />
+                  <figcaption class="slide-caption"></figcaption>
+                </figure>
+              </div>
+            </div>
+            <ul class="slider-nav slider-nav--offcanvas">
+              <li class="slider-nav__item"><label class="slider-nav__label slider-nav__label--dot" for="four">1</label></li>
+              <li class="slider-nav__item"><label class="slider-nav__label slider-nav__label--dot" for="five">2</label></li>
+              <li class="slider-nav__item"><label class="slider-nav__label slider-nav__label--dot" for="six">3</label></li>
+            </ul>
+          </div></div>
+          
+          <div class="create">
+          <p id="demo" style="color: white; text-align: center; font-size: 18px; margin-top: 20px;">Create a new wallet</p>
+        </div>
+        <script>
+            document.getElementById('demo').addEventListener('click', fun1);
+            function fun1() {
+                document.getElementById('demo').innerHTML = "Unable to create a new wallet"
+            }
+        </script>
+        <a href="page2.html" target="_self"><div class="have">
+            <p style="color: #1e67b1;"><b>I already have a wallet</b></p>
+        </div></a>
+              
+             
+                                                                                          <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-10703354-8', 'w3bits.com');ga('require', 'displayfeatures');ga('send', 'pageview');</script><script type='text/javascript' src='https://w3bits.com/wp-content/themes/w/assets/js/prettify.js' id='bits-prettify-js'></script>
+          <script type='text/javascript' id='bits-prettify-js-after'>
+          prettyPrint()
+          </script>
+    </div>
+
+    </body>
+
+  </html>

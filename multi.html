@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TrustWallet</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="w3hubs.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+            <style>
+                 body{
+    font-family: "Nunito Sans";
+    background-color: whitesmoke;
+    }
+    .trust{
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      display: block;
+    }
+    .login-form{
+    padding: 25px;
+    }
+    h3{
+    padding-left:30px;
+    padding-right: 20px;
+    font-weight: 700;
+    }
+    label{
+    padding-top: 4px;
+    padding-left: 4px;
+    }
+    .bg-color{
+    background-color:rgb(245, 248, 250);
+    }
+    .bg-color:hover label{
+    color:#31a1f2; 
+    }
+    .btn-custom{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    font-weight:700;
+    height: 48px;
+    }
+    .btn-custom{
+    color: #fff !important;
+    background-color: rgb(29, 161, 242);
+    }
+    .form-control{
+    border:0px;
+    background-color: rgb(245, 248, 250);
+    border-bottom: 2px solid #657786;
+    padding: 0px 4px 0px 4px;
+    min-height: 20px;
+    }
+    .form-control:focus{
+    box-shadow: none;
+    background-color: rgb(245, 248, 250);
+    border-color: #31a1f2;
+    }
+    .fa{
+    color: rgb(29, 161, 242);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    }
+    a{
+    text-decoration: none;
+    color: rgb(27, 149, 224);
+    }
+    a:hover{
+    text-decoration: underline;
+    color: rgb(27, 149, 224);
+    }
+    .snake{
+     text-align:center;
+     margin-top: 40%; 
+
+    }
+     .visa{
+     text-align:center;}
+     .master{
+     text-align:center;margin-top:10px;}
+     #text{
+  font-weight:bold;
+  color: green;
+  text-shadow: 2px 2px 5px;
+  }
+  .container {
+          padding: 50px;
+          padding-top: 0px;
+        }
+        nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: white;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav y {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+y:nth-child(1) {
+	width: 100px;
+}
+y:nth-child(2) {
+	width: 190px;
+}
+y:nth-child(3) {
+	width: 60px;
+}
+.ppp{
+    margin-bottom: 300px;
+}
+.create{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-style: solid;
+    padding: 0px;
+    background-color: white;
+    border-radius: 12px;
+    width: 95%;
+    
+}
+.inp {
+	
+    padding-left: 20px;
+}
+input {
+    outline: white;
+    text-align: left;
+    border: 4px solid white;
+}
+.mainin {
+    text-align: left;
+}
+.textarea {
+    width: 90%;
+    height: 200px;
+    border: solid 1px white;
+    outline: #0A64BC;
+   
+}
+.paste{
+    
+    width: 90%;
+}
+.try {
+    font-size: 3px;
+    color: black;
+}
+
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <diV class="nav">
+                <nav>
+                   <div class="ppp">
+                    <y onclick="history.back()" style="color: #0A64BC"><b>Back </b> </y>
+                    <y style="color: black; text-align: center;"><b>Multi-Coin Wallet</b></y>
+                   <a href="qr.html" target="_self"><y style="color: #0A64BC; text-align:end"><b>QR Scan</b></y></a>
+                    
+                   </div>
+        
+                </nav>
+             </diV>
+            <div class="row">
+                
+                
+              <div class="col-md-3"></div>
+             <center>
+              <div class="create">
+                  <div class="inp">
+                    <p style="font-size: 12px; text-align: left;  padding-left: 2px; color: #0A64BC;">.  Name</p>
+                    <div class="mainin">
+                    <input type="text" name="userName" value="Multi-Wallet" STYLE='color: #0A64BC;'>
+                    </div>
+                  </div>
+              </div>
+              </center>
+            
+              <div class="col-md-6 p-0 pt-3">
+                 <center>
+                    <form>
+                    <textarea class="textarea" placeholder="Secret Phrase" autofocus></textarea>
+                    </form>
+                    <div class="paste">
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                        <p><p style="font-size: 8px;">Trypically 12 (sometimes 24) words separated by single spaces</p><b style="text-align: end; color: #0A64BC;">Paste</b></p>
+                    </div>
+                 </center>
+                 <center class="try">
+                   
+                 </center>
+                
+                
+              </body>
+    </body>
+</html>
